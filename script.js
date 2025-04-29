@@ -14,33 +14,29 @@ produtoForm.addEventListener("submit", (event) => {
 
     //valida se o campo está vazio e exibe uma mensagem
     if(nome.value== ''){
-        document.getElementById("erro-nome").style.display = 'block';
+        document.getElementById("erro-nome").style.display = "block";
     }else{
-        document.getElementById("erro-nome").style.display = 'none';
+        document.getElementById("erro-nome").style.display = "none";
     }
-    if(nome.value== ''){
-        document.getElementById("erro-categoria").style.display = 'block';
+
+    if(categoria.value== ''){
+        document.getElementById("erro-categoria").style.display = "block";
     }else{
-        document.getElementById("erro-categoria").style.display = 'none;'
+        document.getElementById("erro-categoria").style.display = "none";
     }
-    if(nome.value== ''){
-        document.getElementById("erro-preco").style.display = 'block';
+
+    if(preco.value== ''){
+        document.getElementById("erro-preco").style.display = "block";
     }else{
-        document.getElementById("erro-preco").style.display = 'none;'
+        document.getElementById("erro-preco").style.display = "none";
     }
-    if(nome.value== ''){
-        document.getElementById("erro-quantidade").style.display = 'block';
+
+    if(quantidade.value== ''){
+        document.getElementById("erro-quantidade").style.display = "block";
     }else{
-        document.getElementById("erro-quantidade").style.display = 'none;'
+        document.getElementById("erro-quantidade").style.display = "none";
     }
-    if(nome.value== ''){
-        document.getElementById("erro-imagem").style.display = 'block';
-    }else{
-        document.getElementById("erro-imagem").style.display = 'none;'
-    }
-    if(nome.value== ''){
-        document.getElementById("erro-produto-form").style.display = 'block';
-    }else{
-        document.getElementById("erro-produto-form").style.display = 'none;'
-    }
+
+
+    localStorage.setItem("NomeProduto", nome.value);
 });
